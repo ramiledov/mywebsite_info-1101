@@ -1,0 +1,93 @@
+/* Game page */
+.game-page {
+    position: relative;
+    overflow: hidden;
+    background: radial-gradient(circle at top, rgba(246, 195, 109, 0.14), transparent 35%),
+                linear-gradient(180deg, #09101d 0%, #04070f 100%);
+    padding: 4rem 1.25rem 2.5rem;
+    min-height: calc(100vh - 120px);
+}
+
+.game-page h2 {
+    color: transparent;
+    font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 800;
+    background: linear-gradient(90deg, #ffd45c, #ff66a7, #8c7bff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin: 0 auto 0.9rem;
+    max-width: 900px;
+    text-align: center;
+}
+
+.game-page p {
+    color: #d8e3ff;
+    max-width: 680px;
+    margin: 0 auto 1.8rem;
+    line-height: 1.75;
+    text-align: center;
+}
+
+.game-card {
+    border: 1px solid rgba(124, 189, 255, 0.14);
+    background: rgba(7, 17, 39, 0.96);
+    padding: 1.75rem;
+    border-radius: 28px;
+    text-align: center;
+    box-shadow: 0 28px 60px rgba(0, 0, 0, 0.32);
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.game-card p {
+    color: #c7d9ff;
+}
+
+.game-wrapper {
+    margin: 0 auto 1rem;
+    width: 100%;
+    max-width: 360px;
+    border-radius: 24px;
+    overflow: hidden;
+    background: radial-gradient(circle at top, rgba(255,255,255,0.08), transparent 25%),
+                linear-gradient(180deg, #0c1b34 0%, #07101f 100%);
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+#raceCanvas {
+    width: 100%;
+    display: block;
+    background: #0f1b33;
+}
+
+.game-stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    color: #f3f7ff;
+    margin-bottom: 1rem;
+}
+
+.game-card button {
+    width: 100%;
+    padding: 0.95rem;
+    margin-top: 0.75rem;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #ff6b6b, #ff4d4d);
+    color: #fff;
+    font-weight: 700;
+}
+
+.game-card button:hover {
+    background: linear-gradient(135deg, #ff8080, #ff5d5d);
+}
+
+#gameMessage {
+    margin-top: 1rem;
+    min-height: 1.2rem;
+    color: #ffe7a2;
+}

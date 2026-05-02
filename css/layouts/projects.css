@@ -1,0 +1,136 @@
+/* Projects section */
+.projects {
+    padding: 2rem 1.25rem;
+    margin-top: 3rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projects h2 {
+    color: transparent;
+    font-size: clamp(2rem, 4vw, 3rem);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 800;
+    background: linear-gradient(90deg, #ffd45c, #ff66a7, #8c7bff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin: 0 auto 2rem;
+    max-width: 920px;
+    text-align: center;
+}
+
+.project-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+}
+
+.project-card h3 {
+    color: var(--text);
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    font-size: 1.75rem;
+}
+
+.project-card p {
+    color: var(--text-muted);
+}
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.gallery-slides {
+    position: relative;
+    overflow: hidden;
+    border-radius: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    min-height: 180px;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide.active {
+    display: block;
+}
+
+.gallery-arrow {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    color: #fff;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.gallery-arrow:hover {
+    background: rgba(255, 255, 255, 0.16);
+    transform: translateY(-1px);
+}
+
+.project-label {
+    display: inline-block;
+    margin-bottom: 2.5rem;
+    background: rgba(255, 255, 255, 0.08);
+    color: #f3f7ff;
+    padding: 0.4rem 0.85rem;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    letter-spacing: 0.05em;
+}
+
+.logic-project {
+    text-align: left;
+}
+
+.project-card.hour-project {
+    text-align: center;
+}
+
+.project-card.hour-project .project-description {
+    text-align: left;
+}
+
+.project-card.robotics-project {
+    text-align: center;
+}
+
+.project-card.robotics-project .project-description {
+    text-align: left;
+}
+
+.logic-project p,
+.project-card.hour-project p,
+.project-card.robotics-project p,
+.project-description p {
+    color: #d8e3ff;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.project-description {
+    margin-top: 1.5rem;
+    line-height: 1.8;
+}

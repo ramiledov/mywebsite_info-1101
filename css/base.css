@@ -1,0 +1,30 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #0b1120;
+    --surface: #11203a;
+    --surface-soft: #16284a;
+    --text: #f5f7fb;
+    --text-muted: #b8c2d3;
+    --accent: #f6c36d;
+    --accent-soft: #f2d9a8;
+    --border: rgba(255, 255, 255, 0.08);
+}
+
+body {
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.7;
+    color: var(--text);
+    background: radial-gradient(circle at top, rgba(246, 195, 109, 0.16), transparent 30%),
+                linear-gradient(180deg, #09101d 0%, #04070f 100%);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
